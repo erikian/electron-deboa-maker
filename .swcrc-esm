@@ -1,0 +1,18 @@
+{
+  "sourceMaps": false,
+  "env": {
+    "targets": {
+      "node": "12"
+    }
+  },
+  "module": {
+    "type": "es6"
+  },
+  "jsc": {
+    "parser": {
+      "syntax": "typescript",
+      "dts": true
+    },
+    "target": "es2019"
+  }
+}

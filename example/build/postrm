@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# removes the symlink from /usr/bin after uninstalling the app
+rm /usr/bin/my-awesome-app; exit 0

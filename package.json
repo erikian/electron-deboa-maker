@@ -1,0 +1,52 @@
+{
+  "name": "electron-deboa-maker",
+  "author": "Erik Moura <erikian@erikian.dev>",
+  "version": "0.1.0",
+  "description": "Create a .deb package for your Electron app in any platform",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/esm/types/index.d.ts",
+  "license": "MIT",
+  "engines": {
+    "node": ">= 12.13.0"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js"
+    }
+  },
+  "scripts": {
+    "build": "rimraf dist && concurrently \"yarn:build:*\"",
+    "build:esm": "swc --config-file .swcrc-esm ./src --out-dir dist/esm && tsc -p tsconfig.json",
+    "build:cjs": "swc --config-file .swcrc-cjs ./src --out-dir dist/cjs && tsc -p tsconfig.cjs.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/erikian/electron-deboa-maker"
+  },
+  "dependencies": {
+    "@electron-forge/maker-base": "^6.0.0-beta.64",
+    "deboa": "^1.0.0"
+  },
+  "devDependencies": {
+    "@swc/cli": "^0.1.57",
+    "@swc/core": "^1.2.211",
+    "@swc/register": "^0.1.10",
+    "@types/node": "^17.0.36",
+    "@typescript-eslint/eslint-plugin": "^4.23.0",
+    "@typescript-eslint/parser": "^4.23.0",
+    "concurrently": "^7.2.2",
+    "eslint": "^7.26.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-promise": "^5.1.0",
+    "eslint-plugin-standard": "^5.0.0",
+    "prettier": "2.3.0",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.7.2"
+  }
+}
