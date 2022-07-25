@@ -1083,8 +1083,10 @@ ecc-jsbn@~0.1.1:
     jsbn "~0.1.0"
     safer-buffer "^2.1.0"
 
-electron-deboa-maker@../:
-  version "1.0.0"
+electron-deboa-maker@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/electron-deboa-maker/-/electron-deboa-maker-0.1.0.tgz#f1f36dedb0ad210fca5ba330a38d48fc23df3d7d"
+  integrity sha512-GbesQQjzrW0aTzX7/uyN7drA5TfO5BqIN9DiXElPwrLdh6QJeNJm55Sv9lMSoX6AcMNm6OxDS1ZEmP8PiloDog==
   dependencies:
     "@electron-forge/maker-base" "^6.0.0-beta.64"
     deboa "^1.0.0"
