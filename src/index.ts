@@ -7,7 +7,7 @@ type DeboaOptions = Omit<IDeboa, 'sourceDir' | 'targetDir'>
  * @property {Omit<IDeboa, 'sourceDir' | 'targetDir'>} deboaOptions - Options passed to the deboa constructor.
  * @see IDeboa
  */
-interface IDeboaMakerOptions {
+export interface IDeboaMakerOptions {
   /** @see IDeboa */
   deboaOptions: DeboaOptions
 }
