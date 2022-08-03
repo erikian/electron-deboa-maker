@@ -137,7 +137,7 @@
     "@malept/cross-spawn-promise" "^2.0.0"
     fs-extra "^10.0.0"
 
-"@electron-forge/maker-base@6.0.0-beta.65", "@electron-forge/maker-base@^6.0.0-beta.64":
+"@electron-forge/maker-base@6.0.0-beta.65", "@electron-forge/maker-base@^6.0.0-beta.65":
   version "6.0.0-beta.65"
   resolved "https://registry.yarnpkg.com/@electron-forge/maker-base/-/maker-base-6.0.0-beta.65.tgz#79b4e2a4b418e3d97416db32003eca5c67c9233b"
   integrity sha512-EhDjppd/qdsIDAr6stjAi+OOmhxPidCswPb02Jte6+yh0Wjk5q5vaYS4B6tzlBkZKYvEAiGLYh4tQ/31dxpTHA==
@@ -983,12 +983,12 @@ duplexer3@^0.1.4:
   resolved "https://registry.yarnpkg.com/duplexer3/-/duplexer3-0.1.5.tgz#0b5e4d7bad5de8901ea4440624c8e1d20099217e"
   integrity sha512-1A8za6ws41LQgv9HrE/66jyC5yuSjQ3L/KOpFtoBilsAK2iA2wuS5rTt1OCzIvtS2V7nVmedsUU+DGRcjBmOYA==
 
-electron-deboa-maker@^0.1.0:
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/electron-deboa-maker/-/electron-deboa-maker-0.1.0.tgz#f1f36dedb0ad210fca5ba330a38d48fc23df3d7d"
-  integrity sha512-GbesQQjzrW0aTzX7/uyN7drA5TfO5BqIN9DiXElPwrLdh6QJeNJm55Sv9lMSoX6AcMNm6OxDS1ZEmP8PiloDog==
+electron-deboa-maker@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/electron-deboa-maker/-/electron-deboa-maker-1.0.0.tgz#68ed80604a799bad1f45525313f0cad61d768469"
+  integrity sha512-4YORdsVQ06mtfEl3AZFQa7AqiQi4fHx8XWlcwa27kLi7q+skzyC8V7ByTMKEITxZT/0qbBZTLCvlo82g37agWQ==
   dependencies:
-    "@electron-forge/maker-base" "^6.0.0-beta.64"
+    "@electron-forge/maker-base" "^6.0.0-beta.65"
     deboa "^1.0.0"
 
 electron-notarize@^1.1.1:
@@ -1074,7 +1074,7 @@ electron-winstaller@^5.0.0:
     lodash.template "^4.2.2"
     temp "^0.9.0"
 
-electron@20.0.0:
+electron@^20.0.0:
   version "20.0.0"
   resolved "https://registry.yarnpkg.com/electron/-/electron-20.0.0.tgz#c15a441341380effda071515d8b9c88a11e2a9c4"
   integrity sha512-rPHTdjBKGSoLgGuJVsqDgmK9woDQxzlU18H+3cO4i+fNh29BMbFRwKKyit13lniO1hzRsEJDG5UKvFXs4vEpnA==
