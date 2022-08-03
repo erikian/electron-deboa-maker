@@ -1,7 +1,22 @@
 import MakerBase, { MakerOptions } from '@electron-forge/maker-base'
 import { Deboa, IControlFileOptions, IDeboa } from 'deboa'
 
-type DeboaOptions = Omit<IDeboa, 'sourceDir' | 'targetDir'>
+type OptionalDeboaOptionsFields =
+  | 'controlFileOptions'
+  | 'sourceDir'
+  | 'targetDir'
+
+type DeboaOptions = Omit<IDeboa, OptionalDeboaOptionsFields> & {
+  /** @see IControlFileOptions */
+  controlFileOptions: IMakerControlFileOptions
+}
+
+type OptionalControlFileFields = 'packageName' | 'shortDescription' | 'version'
+
+/** @see IControlFileOptions */
+export interface IMakerControlFileOptions
+  extends Omit<IControlFileOptions, OptionalControlFileFields>,
+    Partial<Pick<IControlFileOptions, OptionalControlFileFields>> {}
 
 /**
  * @property {Omit<IDeboa, 'sourceDir' | 'targetDir'>} deboaOptions - Options passed to the deboa constructor.
@@ -65,7 +80,7 @@ export default class DeboaMaker extends MakerBase<IDeboaMakerOptions> {
     const { deboaOptions = {} as DeboaOptions } = this.config || {}
 
     const {
-      controlFileOptions = {} as IControlFileOptions,
+      controlFileOptions = {} as IMakerControlFileOptions,
       additionalTarEntries = [] as DeboaOptions['additionalTarEntries'],
       ...otherConfigOptions
     } = deboaOptions
