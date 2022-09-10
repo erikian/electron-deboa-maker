@@ -7,6 +7,14 @@
   "module": "./dist/esm/index.js",
   "types": "./dist/esm/types/index.d.ts",
   "license": "MIT",
+  "keywords": [
+    "cross-platforme build",
+    "deb",
+    "debian",
+    "ubuntu",
+    "electron-forge",
+    "electron"
+  ],
   "engines": {
     "node": ">= 12.13.0"
   },
@@ -26,7 +34,7 @@
     "url": "https://github.com/erikian/electron-deboa-maker"
   },
   "dependencies": {
-    "@electron-forge/maker-base": "^6.0.0-beta.65",
+    "@electron-forge/maker-base": "^6.0.0-beta.66",
     "deboa": "^1.0.0"
   },
   "devDependencies": {
