@@ -8,15 +8,17 @@ type OptionalDeboaOptionsFields =
 
 type DeboaOptions = Omit<IDeboa, OptionalDeboaOptionsFields> & {
   /** @see IControlFileOptions */
-  controlFileOptions: IMakerControlFileOptions
+  controlFileOptions: MakerControlFileOptions
 }
 
 type OptionalControlFileFields = 'packageName' | 'shortDescription' | 'version'
 
 /** @see IControlFileOptions */
-export interface IMakerControlFileOptions
-  extends Omit<IControlFileOptions, OptionalControlFileFields>,
-    Partial<Pick<IControlFileOptions, OptionalControlFileFields>> {}
+export type MakerControlFileOptions = Omit<
+  IControlFileOptions,
+  OptionalControlFileFields
+> &
+  Partial<Pick<IControlFileOptions, OptionalControlFileFields>>
 
 /**
  * @property {Omit<IDeboa, 'sourceDir' | 'targetDir'>} deboaOptions - Options passed to the deboa constructor.
@@ -80,12 +82,11 @@ export default class DeboaMaker extends MakerBase<IDeboaMakerOptions> {
     const { deboaOptions = {} as DeboaOptions } = this.config || {}
 
     const {
-      controlFileOptions = {} as IMakerControlFileOptions,
+      controlFileOptions = {} as MakerControlFileOptions,
       additionalTarEntries = [] as DeboaOptions['additionalTarEntries'],
       ...otherConfigOptions
     } = deboaOptions
 
-    // @TODO fetch the dependencies for the depends/recommends/suggests fields dynamically if possible
     const {
       architecture,
       maintainer = author,
