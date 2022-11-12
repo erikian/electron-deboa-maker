@@ -11,53 +11,15 @@
   "keywords": [],
   "license": "MIT",
   "config": {
-    "forge": {
-      "packagerConfig": {
-        "ignore": [
-          "^(/build)",
-          "^(/out$)",
-          ".gitignore",
-          ".idea",
-          ".vscode",
-          "yarn-error.log",
-          "yarn.lock"
-        ],
-        "name": "my-awesome-app"
-      },
-      "makers": [
-        {
-          "name": "electron-deboa-maker",
-          "config": {
-            "deboaOptions": {
-              "icon": "./build/icon.png",
-              "beforeCreateDesktopEntry": "./build/beforeDesktopEntry.js",
-              "controlFileOptions": {
-                "maintainer": "Erik Moura",
-                "homepage": "https://www.example.com",
-                "maintainerScripts": {
-                  "postrm": "./build/postrm"
-                }
-              },
-              "tarballFormat": "tar.xz"
-            }
-          }
-        },
-        {
-          "name": "@electron-forge/maker-squirrel",
-          "config": {
-            "authors": "Erik Moura"
-          }
-        }
-      ]
-    }
+    "forge": "./forge.config.js"
   },
   "dependencies": {
     "electron-squirrel-startup": "^1.0.0"
   },
   "devDependencies": {
-    "@electron-forge/cli": "^6.0.0-beta.66",
-    "@electron-forge/maker-squirrel": "^6.0.0-beta.66",
-    "electron": "^20.0.0",
+    "@electron-forge/cli": "^6.0.1",
+    "@electron-forge/maker-squirrel": "^6.0.1",
+    "electron": "^21.2.3",
     "electron-deboa-maker": "^1.0.0"
   }
 }
