@@ -1,5 +1,7 @@
-/** @type import('electron-deboa-maker').IDeboaMakerOptions */
-const deboaConfig = {
+import type { IDeboaMakerOptions } from 'electron-deboa-maker'
+import type { ForgeConfig } from '@electron-forge/shared-types'
+
+const deboaConfig: IDeboaMakerOptions = {
   deboaOptions: {
     icon: './build/icon.png',
     beforeCreateDesktopEntry: './build/beforeDesktopEntry.js',
@@ -14,17 +16,17 @@ const deboaConfig = {
   },
 }
 
-/** @type import('@electron-forge/shared-types').ForgeConfig */
-module.exports = {
+const forgeConfig: ForgeConfig = {
   packagerConfig: {
     ignore: [
-      '^(/build)',
-      '^(/out$)',
-      '.gitignore',
-      '.idea',
-      '.vscode',
-      'yarn-error.log',
-      'yarn.lock',
+      /^(\/build)/,
+      /^(\/out$)/,
+      /.gitignore/,
+      /.idea/,
+      /.vscode/,
+      /forge.config.ts/,
+      /yarn-error.log/,
+      /yarn.lock/,
     ],
     name: 'my-awesome-app',
   },
@@ -41,3 +43,5 @@ module.exports = {
     },
   ],
 }
+
+export default forgeConfig

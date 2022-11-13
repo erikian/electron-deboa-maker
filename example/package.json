@@ -10,9 +10,6 @@
   },
   "keywords": [],
   "license": "MIT",
-  "config": {
-    "forge": "./forge.config.js"
-  },
   "dependencies": {
     "electron-squirrel-startup": "^1.0.0"
   },
