@@ -6,6 +6,12 @@
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
   "types": "./dist/esm/types/index.d.ts",
+  "files": [
+    "LICENSE",
+    "README.md",
+    "dist",
+    "package.json"
+  ],
   "license": "MIT",
   "keywords": [
     "cross-platforme build",
