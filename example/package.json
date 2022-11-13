@@ -20,6 +20,6 @@
     "@electron-forge/cli": "^6.0.1",
     "@electron-forge/maker-squirrel": "^6.0.1",
     "electron": "^21.2.3",
-    "electron-deboa-maker": "^1.0.0"
+    "electron-deboa-maker": "^1.1.0"
   }
 }
