@@ -94,24 +94,9 @@ export default class DeboaMaker extends MakerBase<IDeboaMakerOptions> {
       shortDescription = description,
       version = appVersion || packageJSONVersion,
       section = 'utils',
-      depends = [
-        'libgtk-3-0',
-        'libnotify4',
-        'libnss3',
-        'libxtst6',
-        'xdg-utils',
-        'libatspi2.0-0',
-        'libdrm2',
-        'libgbm1',
-        'libxcb-dri3-0',
-        'kde-cli-tools | kde-runtime | trash-cli | libglib2.0-bin | gvfs-bin',
-      ],
-      recommends = ['pulseaudio | libasound2'],
-      suggests = [
-        'gir1.2-gnomekeyring-1.0',
-        'libgnome-keyring0',
-        'lsb-release',
-      ],
+      depends = [] as string[],
+      recommends = [] as string[],
+      suggests = [] as string[],
       ...otherControlFileOptions
     } = controlFileOptions
 
@@ -142,13 +127,36 @@ export default class DeboaMaker extends MakerBase<IDeboaMakerOptions> {
       ],
       controlFileOptions: {
         architecture: debianArch(architecture || targetArch),
-        depends,
+        depends: Array.from(
+          new Set([
+            'libgtk-3-0',
+            'libnotify4',
+            'libnss3',
+            'libxtst6',
+            'xdg-utils',
+            'libatspi2.0-0',
+            'libdrm2',
+            'libgbm1',
+            'libxcb-dri3-0',
+            'kde-cli-tools | kde-runtime | trash-cli | libglib2.0-bin | gvfs-bin',
+            ...depends,
+          ]),
+        ),
         maintainer,
         packageName,
-        recommends,
+        recommends: Array.from(
+          new Set(['pulseaudio | libasound2', ...recommends]),
+        ),
         section,
         shortDescription,
-        suggests,
+        suggests: Array.from(
+          new Set([
+            'gir1.2-gnomekeyring-1.0',
+            'libgnome-keyring0',
+            'lsb-release',
+            ...suggests,
+          ]),
+        ),
         version,
         ...otherControlFileOptions,
       },
