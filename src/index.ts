@@ -11,7 +11,11 @@ type DeboaOptions = Omit<IDeboa, OptionalDeboaOptionsFields> & {
   controlFileOptions: MakerControlFileOptions
 }
 
-type OptionalControlFileFields = 'packageName' | 'shortDescription' | 'version'
+type OptionalControlFileFields =
+  | 'maintainer'
+  | 'packageName'
+  | 'shortDescription'
+  | 'version'
 
 /** @see IControlFileOptions */
 export type MakerControlFileOptions = Omit<
