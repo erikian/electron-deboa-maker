@@ -217,3 +217,5 @@ export default class DeboaMaker extends MakerBase<IDeboaMakerOptions> {
     return [debLocation]
   }
 }
+
+export { DeboaMaker }
