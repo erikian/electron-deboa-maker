@@ -779,10 +779,10 @@ cuint@^0.2.2:
   resolved "https://registry.yarnpkg.com/cuint/-/cuint-0.2.2.tgz#408086d409550c2631155619e9fa7bcadc3b991b"
   integrity sha512-d4ZVpCW31eWwCMe1YT3ur7mUDnTXbgwyzaL320DrcRT45rfjYxkt5QWLrmOJ+/UEAI2+fQgKe/fCjR8l4TpRgw==
 
-deboa@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/deboa/-/deboa-1.0.0.tgz#7bb85bfa3e9baf0fee94d7eee2f7303060d4e48b"
-  integrity sha512-s4txZYVl5u63tjSnLsbbK/szK/LldBNsphjpgPMNfFAgr0h0C90mxjo8pLoViQAGRGUaKluujxJDmezouculNg==
+deboa@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/deboa/-/deboa-1.0.1.tgz#c209da527660e41fabc3daa10283afffa10d1c14"
+  integrity sha512-itz3y5lV8ng+uzdX4aKqjP70h/Fo+7kaFqbU/NFyC4t9JRj+gOOt+VqNbd7eSa7dv1QgFMNueTjR9uzI8ND/Gw==
   dependencies:
     fast-folder-size "^1.7.0"
     fs-extra "^10.1.0"
@@ -872,13 +872,13 @@ duplexer2@~0.1.4:
   dependencies:
     readable-stream "^2.0.2"
 
-electron-deboa-maker@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/electron-deboa-maker/-/electron-deboa-maker-1.1.0.tgz#1df3b6c8022762c0d3961d920221a7233a4e9b0f"
-  integrity sha512-KQP2jWiTzw4fUAinUUS027p3MQkkmr0CZs0LuiIq8HBSURqiMS+C+RaCIwCUMufZG0G8SCmlCkqTBHW0inq4GQ==
+electron-deboa-maker@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/electron-deboa-maker/-/electron-deboa-maker-1.1.1.tgz#04a3e0a66bc26be9cea00e2eeb83d91e2574b6b6"
+  integrity sha512-11ISCpKY28U88GTIwMQfIKNzYFC2yO6gsjb+KuwhWGu+inxPHBY//L3x0qoIFm1WGSDccfg06oqibZBj0IQa9Q==
   dependencies:
     "@electron-forge/maker-base" "^6.0.1"
-    deboa "^1.0.0"
+    deboa "^1.0.1"
 
 electron-packager@^17.1.1:
   version "17.1.1"
