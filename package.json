@@ -41,7 +41,7 @@
   },
   "dependencies": {
     "@electron-forge/maker-base": "^6.0.1",
-    "deboa": "^1.0.0"
+    "deboa": "^1.0.1"
   },
   "devDependencies": {
     "@swc/cli": "^0.1.57",
