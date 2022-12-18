@@ -1,7 +1,7 @@
 {
   "name": "electron-deboa-maker",
   "author": "Erik Moura <erikian@erikian.dev>",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Create a .deb package for your Electron app in any platform",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
