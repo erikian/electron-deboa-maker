@@ -973,10 +973,10 @@ date-fns@^2.16.1:
   resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-2.28.0.tgz#9570d656f5fc13143e50c975a3b6bbeb46cd08b2"
   integrity sha512-8d35hViGYx/QH0icHYCeLmsLmMUheMmTyV9Fcm6gvNwdw31yXXH+O85sOBJ+OLnLQMKZowvpKb6FgMIQjcpvQw==
 
-deboa@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/deboa/-/deboa-1.0.1.tgz#c209da527660e41fabc3daa10283afffa10d1c14"
-  integrity sha512-itz3y5lV8ng+uzdX4aKqjP70h/Fo+7kaFqbU/NFyC4t9JRj+gOOt+VqNbd7eSa7dv1QgFMNueTjR9uzI8ND/Gw==
+deboa@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/deboa/-/deboa-1.1.1.tgz#85232d88d9d86fb06470ac582a3645493341ebe9"
+  integrity sha512-Mhx43GH4lT7bnR71KbXVAgO0WELOg+dmrmjEstTyUb9NGB5Gb/8fu3uzHRkTg8+qzIuICUNeMEdT/jnuL3DSYw==
   dependencies:
     fast-folder-size "^1.7.0"
     fs-extra "^10.1.0"
@@ -2147,9 +2147,9 @@ json-stringify-safe@^5.0.1:
   integrity sha512-ZClg6AaYvamvYEE82d3Iyd3vSSIjQ+odgjaTzRuO3s7toCdFKczob2i0zCh7JE8kWn17yvAWhUVxvqGwUalsRA==
 
 json5@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/json5/-/json5-1.0.1.tgz#779fb0018604fa854eacbf6252180d83543e3dbe"
-  integrity sha512-aKS4WQjPenRxiQsC93MNfjx+nbF4PAdYzmd/1JIj8HYzqfbu86beTuNgXDzPknWk0n0uARlyewZo4s++ES36Ow==
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/json5/-/json5-1.0.2.tgz#63d98d60f21b313b77c4d6da18bfa69d80e1d593"
+  integrity sha512-g1MWMLBiz8FKi1e4w0UyVL3w+iJceWAFBAaBnnGKOpNa5f8TLktkbre1+s6oICydWAm+HRUGTmI+//xv2hvXYA==
   dependencies:
     minimist "^1.2.0"
 
