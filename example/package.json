@@ -16,7 +16,7 @@
   "devDependencies": {
     "@electron-forge/cli": "6.0.4",
     "@electron-forge/maker-squirrel": "6.0.4",
-    "electron": "22.3.25",
+    "electron": "28.3.2",
     "electron-deboa-maker": "^1.1.2"
   }
 }
